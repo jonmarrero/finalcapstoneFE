@@ -34,7 +34,7 @@ export async function UpdateAction({ request, params }) {
     };
   
     // request to update route in backend
-    await fetch(url + "/zooss/" + params.id + "/", {
+    await fetch(url + "/zoos/" + params.id + "/", {
       method: "put",
       headers: {
         "Content-Type": "application/json",
