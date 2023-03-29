@@ -7,11 +7,11 @@ const Index = (props) => {
 
   return <>
   <div style={{textAlign: "center"}}>
-      <h2>Create a New Workout</h2>
+      <h2>Workout List</h2>
       <Form action="/create" method="post">
-          <input type="text" name="subject" placeholder="subject"/>
-          <input type="text" name="details" placeholder="subject"/>
-          <button>Create New Workout</button>
+          <input type="text" name="subject" placeholder="muscle"/>
+          <input type="text" name="details" placeholder="workout"/>
+          <button>Add Workout</button>
       </Form>
   </div>
   {zoos?.map((post) => <Post key={post.id} post={post} />)}

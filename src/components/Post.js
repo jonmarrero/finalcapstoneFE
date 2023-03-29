@@ -6,9 +6,9 @@ const Post = (props) => {
   // style
   const div = {
     textAlign: "center",
-    border: "3px solid",
-    margin: "10px auto",
-    width: "80%",
+    border: "5px solid",
+    margin: "15px auto",
+    width: "50%",
   };
 
   return (

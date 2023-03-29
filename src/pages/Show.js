@@ -15,8 +15,8 @@ const Show = (props) => {
     <div style={div}>
       <h1>{post.subject}</h1>
       <h2>{post.details}</h2>
+      <img src="https://media.istockphoto.com/id/451027665/vector/illustration-of-the-strong-garilly.jpg?b=1&s=612x612&w=0&k=20&c=mBULDJT4TsdwaVtJbcB4-pnIYl4uCI0OMQgixPii06k="></img>
       <div>
-        <h2>Update this Workout</h2>
         <Form action={`/update/${post.id}`} method="post">
           <input
             type="text"
