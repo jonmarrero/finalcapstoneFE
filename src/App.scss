@@ -1,21 +1,25 @@
-@import "./Variables/bod.scss";
+@import "./Variables/_colors.scss";
+@import "./Variables/_fonts";
 
 
 .App {
     text-align: center;
-    background-color: $blackColor;
+    background-color: $main-color;
     margin: 0;
     padding: 3%;
+    overflow: hidden;
   }
 
-  h1{
+h1{
     height: 200%;
-    color: #e80c0c;
+    color: $secondary-color;
+    font: $primary-font;
  }
 
 h2{
-    color: #1015a6;
+    color: $blue-color;
     height: 40px;
+    font: $secondary-font;
 }
 
 img {
