@@ -9,6 +9,7 @@ export async function CreateAction({ request }) {
   const newZoo = {
     subject: formData.get("subject"),
     details: formData.get("details"),
+    info: formData.get("info"),
   };
 
   // request to create route in backend
@@ -31,6 +32,7 @@ export async function UpdateAction({ request, params }) {
     const newZoo = {
       subject: formData.get("subject"),
       details: formData.get("details"),
+      info: formData.get("info"),
     };
   
     // request to update route in backend

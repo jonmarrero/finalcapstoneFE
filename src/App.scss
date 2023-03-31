@@ -11,9 +11,8 @@
   }
 
 h1{
-    height: 200%;
+    height: 600%;
     color: $secondary-color;
-    font: $primary-font;
  }
 
 h2{
@@ -26,41 +25,78 @@ img {
     width: 100%;
     padding: 0;
     margin: 0;
-
 }
-//   .App-logo {
-//     height: 40vmin;
-//     pointer-events: none;
-//   }
-  
-//   @media (prefers-reduced-motion: no-preference) {
-// .App-logo {
-//       animation: App-logo-spin infinite 20s linear;
-//       background-color: rgb(102, 10, 10);
-//     }
-//   }
-  
-//   .App-header {
-//     background-color: #de1d1d;
-//     min-height: 300vh;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     font-size: calc(10px + 2vmin);
-//     color: white;
-//   }
-  
-//   .App-link {
-//     color: #010607;
-//   }
-  
-//   @keyframes App-logo-spin {
-//     from {
-//       transform: rotate(0deg);
-//     }
-//     to {
-//       transform: rotate(360deg);
-//     }
-//   }
-  
+
+.slider {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+}
+
+.image {
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    font-size: 3rem;
+    color: $main-color;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    font-size: 3rem;
+    color: $main-color;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+}
+
+.slide.active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+.list {
+        background-color: $secondary-color;
+        border: 3px solid $black-color;
+    }
+
+.update {
+        background-color: $secondary-color;
+        border: 3px solid $black-color;
+    }
+
+.trash {
+        background-color: $secondary-color;
+        border: 3px solid $black-color;
+    }
+
+.back {
+        background-color: $secondary-color;
+        border: 3px solid $black-color;
+    }
+
+h5 {
+    padding: 0;
+    margin: 5;
+    color: $h5-color;
+}

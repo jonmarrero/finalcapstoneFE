@@ -1,5 +1,4 @@
 import { Link, useLoaderData, Form } from "react-router-dom";
-// import { SearchOutlined, ShoppingBasket } from '@material-ui/icons'
 
 const Show = (props) => {
   const post = useLoaderData();
@@ -7,17 +6,17 @@ const Show = (props) => {
   //styles
   const div = {
     textAlign: "center",
-    border: "3px solid green",
-    width: "80%",
-    margin: "30px auto",
+    border: "3px solid black",
+    width: "70%",
+    margin: "10px auto",
+    padding: 80,
   };
 
   return (
     <div style={div}>
       <h1>{post.subject}</h1>
-
       <h2>{post.details}</h2>
-      <img src="https://media.istockphoto.com/id/451027665/vector/illustration-of-the-strong-garilly.jpg?b=1&s=612x612&w=0&k=20&c=mBULDJT4TsdwaVtJbcB4-pnIYl4uCI0OMQgixPii06k="></img>
+      <h3>{post.info}</h3>
       <div>
         <Form action={`/update/${post.id}`} method="post">
           <input
@@ -32,14 +31,20 @@ const Show = (props) => {
             placeholder="details"
             defaultValue={post.details}
           />
-          <button>Update Workout</button>
+          <input
+            type="text"
+            name="info"
+            placeholder="info"
+            defaultValue={post.info}
+          />
+          <button className="update">Update Workout</button>
         </Form>
         <Form action={`/delete/${post.id}`} method="post">
-            <button>Delete Workout</button>
+            <button className="trash">Trash</button>
         </Form>
       </div>
       <Link to="/">
-        <button>Go Back</button>
+        <button className="back">Go Back</button>
       </Link>
     </div>
   );
