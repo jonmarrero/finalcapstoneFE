@@ -12,6 +12,7 @@
 
 h1{
     height: 600%;
+    text-align: center;
     color: $secondary-color;
  }
 
@@ -38,7 +39,7 @@ img {
 
 .image {
     width: 1000px;
-    height: 600px;
+    height: 550px;
     border-radius: 10px;
 }
 
@@ -95,8 +96,61 @@ img {
         border: 3px solid $black-color;
     }
 
-h5 {
+h4 {
     padding: 0;
     margin: 5;
     color: $h5-color;
+}
+
+.search{
+    display: flex;
+    position: absolute;
+    right: 180px;
+    bottom: 580px;
+    width: 150px;
+    border: 3px solid $black-color;
+    color: $h5-color;
+    padding: 3px;
+    margin: none;
+    background-color: $secondary-color;
+
+}
+
+.login {
+    display: flex;
+    position: absolute;
+    left: 180px;
+    bottom: 580px;
+    width: 150px;
+    border: 3px solid $black-color;
+    color: $h5-color;
+    padding: 3px;
+    margin: none;
+    background-color: $secondary-color;
+}
+
+.programs {
+    display: flex;
+    position: absolute;
+    left: 480px;
+    bottom: 580px;
+    width: 150px;
+    border: 3px solid $black-color;
+    color: $h5-color;
+    padding: 3px;
+    margin: none;
+    background-color: $secondary-color;
+}
+
+.meals {
+    display: flex;
+    position: absolute;
+    right: 480px;
+    bottom: 580px;
+    width: 150px;
+    border: 3px solid $black-color;
+    color: $h5-color;
+    padding: 3px;
+    margin: none;
+    background-color: $secondary-color;
 }
